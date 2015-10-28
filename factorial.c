@@ -11,10 +11,14 @@ main(int argc, char **argv){
         if (argc != 2){
                 exit(0);
         }
-        int size = atof(argv[1]) * 1024 * 1024 * 1024 * 10 / 4;
+        int size = atof(argv[1]) * 1024 * 1024 * 1024;
         printf("%d\n", size);
-        float *mem = (float*)malloc(sizeof(float) * size);
+        float *mem = (float*)malloc(sizeof(float) * size / 4);
         while (1) {
-                factorial(100);
+                int i = 0;
+                for (i = 0; i < size; i++){
+                        mem[i] = factorial(100);                        
+                }
+
         }
 }
