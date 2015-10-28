@@ -5,7 +5,7 @@ int factorial(int n){
         return (n == 1 || n == 0) ? 1 : factorial(n - 1) * n;
 }
 
-#define N 100000000
+#define N 1024 * 1024 * 256
 
 main(int argc, char **argv){
 
