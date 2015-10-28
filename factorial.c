@@ -11,7 +11,7 @@ main(int argc, char **argv){
         if (argc != 2){
                 exit(0);
         }
-        int size = atof(argv[1]) * 1024 * 1024 * 1024 / 4;
+        int size = atof(argv[1]) * 1024 * 1024 * 1024 * 10 / 4;
         printf("%d\n", size);
         float *mem = (float*)malloc(sizeof(float) * size);
         while (1) {
