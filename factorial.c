@@ -11,10 +11,10 @@ main(int argc, char **argv){
         if (argc != 2){
                 exit(0);
         }
-        float size = atof(argv[1]) * 1024 * 1024 * 1024 / 4;
-        printf("%f\n", size);
+        int size = atof(argv[1]) * 1024 * 1024 * 1024 / 4;
+        printf("%d\n", size);
         float *mem = (float*)malloc(sizeof(float) * size);
         while (1) {
-                printf("%d\n", factorial(100));
+                factorial(100);
         }
 }
